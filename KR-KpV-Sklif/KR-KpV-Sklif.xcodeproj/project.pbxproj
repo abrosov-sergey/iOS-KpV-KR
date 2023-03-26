@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6361E1BA29CC5BBB00EF1CC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6361E1B929CC5BBB00EF1CC0 /* AppDelegate.swift */; };
+		6361E1BE29CC5BBB00EF1CC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6361E1BD29CC5BBB00EF1CC0 /* ViewController.swift */; };
+		6361E1C329CC5BC300EF1CC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6361E1C229CC5BC300EF1CC0 /* Assets.xcassets */; };
+		6361E1C629CC5BC300EF1CC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6361E1C429CC5BC300EF1CC0 /* LaunchScreen.storyboard */; };
+		6361E1D629CC667F00EF1CC0 /* DicomFilesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6361E1D229CC667F00EF1CC0 /* DicomFilesPresenter.swift */; };
+		6361E1D729CC667F00EF1CC0 /* DicomFilesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6361E1D329CC667F00EF1CC0 /* DicomFilesRouter.swift */; };
+		6361E1D829CC667F00EF1CC0 /* DicomFilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6361E1D429CC667F00EF1CC0 /* DicomFilesViewController.swift */; };
+		6361E1D929CC667F00EF1CC0 /* DicomFilesModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6361E1D529CC667F00EF1CC0 /* DicomFilesModuleConfigurator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6361E1B629CC5BBB00EF1CC0 /* KR-KpV-Sklif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KR-KpV-Sklif.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6361E1B929CC5BBB00EF1CC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6361E1BD29CC5BBB00EF1CC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6361E1C229CC5BC300EF1CC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6361E1C529CC5BC300EF1CC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6361E1C729CC5BC300EF1CC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6361E1D229CC667F00EF1CC0 /* DicomFilesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicomFilesPresenter.swift; sourceTree = "<group>"; };
+		6361E1D329CC667F00EF1CC0 /* DicomFilesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicomFilesRouter.swift; sourceTree = "<group>"; };
+		6361E1D429CC667F00EF1CC0 /* DicomFilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicomFilesViewController.swift; sourceTree = "<group>"; };
+		6361E1D529CC667F00EF1CC0 /* DicomFilesModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicomFilesModuleConfigurator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6361E1B329CC5BBB00EF1CC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6361E1AD29CC5BBA00EF1CC0 = {
+			isa = PBXGroup;
+			children = (
+				6361E1B829CC5BBB00EF1CC0 /* KR-KpV-Sklif */,
+				6361E1B729CC5BBB00EF1CC0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6361E1B729CC5BBB00EF1CC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6361E1B629CC5BBB00EF1CC0 /* KR-KpV-Sklif.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6361E1B829CC5BBB00EF1CC0 /* KR-KpV-Sklif */ = {
+			isa = PBXGroup;
+			children = (
+				6361E1CD29CC654600EF1CC0 /* Modules */,
+				6361E1C229CC5BC300EF1CC0 /* Assets.xcassets */,
+				6361E1C429CC5BC300EF1CC0 /* LaunchScreen.storyboard */,
+				6361E1C729CC5BC300EF1CC0 /* Info.plist */,
+			);
+			path = "KR-KpV-Sklif";
+			sourceTree = "<group>";
+		};
+		6361E1CD29CC654600EF1CC0 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6361E1CE29CC655200EF1CC0 /* Main */,
+				6361E1CF29CC657B00EF1CC0 /* Authorization */,
+				6361E1D129CC65DA00EF1CC0 /* MarkupScreen */,
+				6361E1D029CC65AC00EF1CC0 /* DicomFiles */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6361E1CE29CC655200EF1CC0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6361E1BD29CC5BBB00EF1CC0 /* ViewController.swift */,
+				6361E1B929CC5BBB00EF1CC0 /* AppDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6361E1CF29CC657B00EF1CC0 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		6361E1D029CC65AC00EF1CC0 /* DicomFiles */ = {
+			isa = PBXGroup;
+			children = (
+				6361E1DA29CC66EF00EF1CC0 /* Configurator */,
+				6361E1DB29CC670100EF1CC0 /* Model */,
+				6361E1DE29CC67A100EF1CC0 /* View */,
+				6361E1DC29CC672500EF1CC0 /* Presenter */,
+				6361E1DD29CC673500EF1CC0 /* Router */,
+			);
+			path = DicomFiles;
+			sourceTree = "<group>";
+		};
+		6361E1D129CC65DA00EF1CC0 /* MarkupScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MarkupScreen;
+			sourceTree = "<group>";
+		};
+		6361E1DA29CC66EF00EF1CC0 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				6361E1D529CC667F00EF1CC0 /* DicomFilesModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		6361E1DB29CC670100EF1CC0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6361E1DC29CC672500EF1CC0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6361E1D229CC667F00EF1CC0 /* DicomFilesPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6361E1DD29CC673500EF1CC0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6361E1D329CC667F00EF1CC0 /* DicomFilesRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		6361E1DE29CC67A100EF1CC0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6361E1D429CC667F00EF1CC0 /* DicomFilesViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6361E1B529CC5BBB00EF1CC0 /* KR-KpV-Sklif */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6361E1CA29CC5BC300EF1CC0 /* Build configuration list for PBXNativeTarget "KR-KpV-Sklif" */;
+			buildPhases = (
+				6361E1B229CC5BBB00EF1CC0 /* Sources */,
+				6361E1B329CC5BBB00EF1CC0 /* Frameworks */,
+				6361E1B429CC5BBB00EF1CC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KR-KpV-Sklif";
+			productName = "KR-KpV-Sklif";
+			productReference = 6361E1B629CC5BBB00EF1CC0 /* KR-KpV-Sklif.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6361E1AE29CC5BBB00EF1CC0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					6361E1B529CC5BBB00EF1CC0 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 6361E1B129CC5BBB00EF1CC0 /* Build configuration list for PBXProject "KR-KpV-Sklif" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6361E1AD29CC5BBA00EF1CC0;
+			productRefGroup = 6361E1B729CC5BBB00EF1CC0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6361E1B529CC5BBB00EF1CC0 /* KR-KpV-Sklif */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6361E1B429CC5BBB00EF1CC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6361E1C629CC5BC300EF1CC0 /* LaunchScreen.storyboard in Resources */,
+				6361E1C329CC5BC300EF1CC0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6361E1B229CC5BBB00EF1CC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6361E1BE29CC5BBB00EF1CC0 /* ViewController.swift in Sources */,
+				6361E1D729CC667F00EF1CC0 /* DicomFilesRouter.swift in Sources */,
+				6361E1D629CC667F00EF1CC0 /* DicomFilesPresenter.swift in Sources */,
+				6361E1D929CC667F00EF1CC0 /* DicomFilesModuleConfigurator.swift in Sources */,
+				6361E1BA29CC5BBB00EF1CC0 /* AppDelegate.swift in Sources */,
+				6361E1D829CC667F00EF1CC0 /* DicomFilesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6361E1C429CC5BC300EF1CC0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6361E1C529CC5BC300EF1CC0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6361E1C829CC5BC300EF1CC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6361E1C929CC5BC300EF1CC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6361E1CB29CC5BC300EF1CC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V6LT92FY3N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "KR-KpV-Sklif/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "abrosov-sergey.KR-KpV-Sklif";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6361E1CC29CC5BC300EF1CC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V6LT92FY3N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "KR-KpV-Sklif/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "abrosov-sergey.KR-KpV-Sklif";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6361E1B129CC5BBB00EF1CC0 /* Build configuration list for PBXProject "KR-KpV-Sklif" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6361E1C829CC5BC300EF1CC0 /* Debug */,
+				6361E1C929CC5BC300EF1CC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6361E1CA29CC5BC300EF1CC0 /* Build configuration list for PBXNativeTarget "KR-KpV-Sklif" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6361E1CB29CC5BC300EF1CC0 /* Debug */,
+				6361E1CC29CC5BC300EF1CC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6361E1AE29CC5BBB00EF1CC0 /* Project object */;
+}
