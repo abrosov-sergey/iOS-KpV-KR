@@ -27,8 +27,8 @@ final class DicomFilesViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     output?.viewDidLoad()
-      
-    view.backgroundColor = .green
+    
+    setupUI()
   }
 
   // MARK: - Actions
@@ -37,7 +37,7 @@ final class DicomFilesViewController: UIViewController {
   // MARK: - Setup
 
   private func setupUI() {
-
+      view.backgroundColor = .green
   }
 
   private func setupLocalization() {
