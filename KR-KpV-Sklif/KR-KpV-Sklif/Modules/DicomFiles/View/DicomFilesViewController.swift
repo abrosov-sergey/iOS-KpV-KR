@@ -16,9 +16,7 @@ final class DicomFilesViewController: UIViewController {
 
   // MARK: - Properties
   
-    var mainLabel: UILabel() = {
-        
-    }()
+  private let mainLabel = UILabel()
 
   var output: DicomFilesViewOutput?
 
@@ -38,7 +36,13 @@ final class DicomFilesViewController: UIViewController {
 
   private func setupUI() {
       view.backgroundColor = .green
+      
+      setupLabels()
   }
+  
+    private func setupLabels() {
+        mainLabel.text = "Серии снимков формата DICOM"
+    }
 
   private func setupLocalization() {
 
